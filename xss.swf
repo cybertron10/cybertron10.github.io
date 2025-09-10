@@ -1,0 +1,13 @@
+// Simple test SWF with ActionScript
+package {
+    import flash.display.Sprite;
+    import flash.external.ExternalInterface;
+    
+    public class XSSTest extends Sprite {
+        public function XSSTest() {
+            if (ExternalInterface.available) {
+                ExternalInterface.call("alert", "XSS Test - Safe Environment");
+            }
+        }
+    }
+}
