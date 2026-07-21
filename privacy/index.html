@@ -1,0 +1,220 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Penny - AI Money Manager</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, sans-serif;
+            background: #0a0e17;
+            color: #e0e0e0;
+            line-height: 1.7;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 24px;
+        }
+        h1 {
+            font-size: 2rem;
+            color: #00f0ff;
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+        .last-updated {
+            color: #888;
+            font-size: 0.9rem;
+            margin-bottom: 32px;
+            border-bottom: 1px solid #1a1f2e;
+            padding-bottom: 16px;
+        }
+        h2 {
+            color: #00f0ff;
+            font-size: 1.25rem;
+            margin-top: 32px;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+        h3 {
+            color: #a0c0ff;
+            font-size: 1.05rem;
+            margin-top: 24px;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        p { margin-bottom: 14px; color: #c0c4d0; }
+        ul { margin-bottom: 14px; padding-left: 24px; }
+        li { margin-bottom: 6px; color: #c0c4d0; }
+        a { color: #00f0ff; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        strong { color: #e0e4f0; }
+        .highlight-box {
+            background: #111827;
+            border-left: 3px solid #00f0ff;
+            padding: 16px 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .highlight-box p { margin-bottom: 0; }
+        @media (max-width: 600px) {
+            .container { padding: 24px 16px; }
+            h1 { font-size: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Privacy Policy</h1>
+        <p class="last-updated"><strong>Last Updated:</strong> July 1, 2026</p>
+
+        <p>
+            This Privacy Policy explains how <strong>Penny - AI Money Manager</strong> ("we", "our", or "us")
+            collects, uses, discloses, and safeguards your information when you use our mobile application
+            (the "App"). Please read this policy carefully. By using the App, you consent to the practices
+            described in this policy.
+        </p>
+
+        <div class="highlight-box">
+            <p><strong>Contact Us:</strong> If you have any questions about this Privacy Policy, please contact us at
+            <a href="mailto:viduapps1@gmail.com">viduapps1@gmail.com</a>.</p>
+        </div>
+
+        <h2>1. Information We Collect</h2>
+
+        <h3>1.1 Information You Provide Directly</h3>
+        <ul>
+            <li><strong>Account Information:</strong> When you sign up, we collect your email address and display name. If you use Sign in with Apple, we receive the email and name you authorize Apple to share.</li>
+            <li><strong>Financial Data:</strong> You may manually enter or scan receipts to record financial transactions, including amounts, merchant names, categories, dates, and optional notes.</li>
+            <li><strong>Receipt Images:</strong> When you use the receipt scanning feature, the App processes images on-device using Apple Vision (iOS) or Google ML Kit (Android) for text recognition. The raw image may be transmitted to our backend server for AI-powered parsing to extract transaction details. We do not permanently store receipt images unless required for debugging with your consent.</li>
+            <li><strong>AI Chat Queries:</strong> When you use the AI Chat feature, your messages and relevant financial context (transaction summaries, category breakdowns) are sent to our backend server, which forwards them to a third-party AI LLM provider for processing.</li>
+            <li><strong>Budget & Category Preferences:</strong> You can set custom spending categories and monthly budget targets, which are stored locally and in our cloud backend if you enable sync.</li>
+        </ul>
+
+        <h3>1.2 Information Collected Automatically</h3>
+        <ul>
+            <li><strong>Device Information:</strong> We may collect device model, operating system version, and app version to diagnose issues and optimize performance.</li>
+            <li><strong>Usage Data:</strong> Anonymous usage statistics (feature interactions, screen views) may be collected to improve the App experience.</li>
+            <li><strong>Crash Logs:</strong> If the App crashes, anonymized diagnostic data may be sent to help us fix bugs.</li>
+        </ul>
+
+        <h3>1.3 Information from Third-Party Services</h3>
+        <ul>
+            <li><strong>Firebase Authentication:</strong> When you sign in with email/password or Sign in with Apple, Firebase Auth manages the authentication flow. We receive only the Firebase User ID, email, and display name.</li>
+            <li><strong>Apple App Store (In-App Purchases):</strong> When you purchase a premium subscription, Apple's StoreKit handles the transaction. We receive a purchase receipt token to validate and activate your subscription. We do not see your payment card details.</li>
+        </ul>
+
+        <h2>2. How We Use Your Information</h2>
+        <p>We use the collected information for the following purposes:</p>
+        <ul>
+            <li><strong>To provide and maintain the App:</strong> Process transactions, generate financial insights, manage budgets, and deliver AI chat responses.</li>
+            <li><strong>To authenticate your identity:</strong> Verify login credentials and manage account access.</li>
+            <li><strong>To process premium subscriptions:</strong> Validate in-app purchase receipts with Apple and unlock premium features based on entitlement status.</li>
+            <li><strong>To enable cloud sync:</strong> Synchronize your transaction data across devices via our self-hosted backend API server (<code>iptvstarshare.com</code>) when you enable the cloud sync feature (premium feature).</li>
+            <li><strong>To improve our services:</strong> Analyze usage patterns to improve features, fix bugs, and optimize performance.</li>
+            <li><strong>To communicate with you:</strong> Send transactional emails (e.g., subscription confirmation, account deletion confirmation) and critical service updates.</li>
+            <li><strong>To comply with legal obligations:</strong> Respond to lawful requests from authorities and enforce our Terms of Service.</li>
+        </ul>
+
+        <h2>3. Data Storage and Security</h2>
+
+        <h3>3.1 Where Your Data is Stored</h3>
+        <ul>
+            <li><strong>Local Storage (Your Device):</strong> Your financial transactions are stored locally on your device using encrypted Hive databases. Your authentication tokens are stored in the platform secure keystore (iOS Keychain / Android EncryptedSharedPreferences).</li>
+            <li><strong>Cloud Storage (Backend Server):</strong> If you enable cloud sync (premium feature), your transaction data, categories, budgets, and settings are synced to our self-hosted backend API server at <code>iptvstarshare.com</code> and stored in an encrypted SQLite database on the server.</li>
+            <li><strong>Account & Subscription Data:</strong> Your user ID, subscription status, premium expiry dates, and purchase receipt tokens are stored in a separate SQLite database on the same backend server to validate ongoing entitlement.</li>
+        </ul>
+
+        <h3>3.2 Data Security Measures</h3>
+        <ul>
+            <li>All network communication between the App and our backend is encrypted using TLS 1.3 with certificate pinning to prevent man-in-the-middle attacks.</li>
+            <li>Authentication tokens are stored in platform-specific secure storage (iOS Keychain, Android EncryptedSharedPreferences).</li>
+            <li>Receipt images are processed and discarded — they are not permanently retained on our servers.</li>
+            <li>Backend API endpoints enforce per-user data isolation — every request is authenticated via Firebase ID token verification, and all database queries are scoped to the authenticated user's ID.</li>
+            <li>Our backend enforces request binding (nonce-based), rate limiting, and Firebase ID token verification to prevent unauthorized access.</li>
+        </ul>
+
+        <h2>4. Data Sharing and Third-Party Services</h2>
+        <p>We do not sell your personal information. We share data only with the following third-party services necessary for the App's operation:</p>
+        <ul>
+            <li><strong>Google Firebase (Firebase Auth, Crashlytics):</strong> Used for user authentication and crash reporting. <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy Policy</a></li>
+            <li><strong>Third-Party AI LLM Provider:</strong> Used to process AI Chat queries and receipt parsing. Chat messages and transaction context may be sent to a third-party AI language model provider for response generation. The provider is contractually obligated not to use your data for model training.</li>
+            <li><strong>Apple Inc. (App Store, StoreKit, Sign in with Apple):</strong> Used for app distribution, in-app purchase processing, and authentication. <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple Privacy Policy</a></li>
+            <li><strong>Apple Vision / Google ML Kit:</strong> On-device text recognition from receipt images. The App uses Apple Vision on iOS and Google ML Kit on Android — both operate entirely on-device with no image data transmitted to third-party servers for OCR.</li>
+            <li><strong>Codemagic (CI/CD):</strong> Used for building and distributing the App. Build artifacts may include anonymized metadata. <a href="https://codemagic.io/privacy" target="_blank">Codemagic Privacy Policy</a></li>
+        </ul>
+
+        <h2>5. Data Retention and Deletion</h2>
+        <ul>
+            <li><strong>Account Data:</strong> We retain your account data and associated transaction records for as long as your account is active. You may delete your account at any time from the App Settings → Delete Account.</li>
+            <li><strong>Account Deletion:</strong> When you delete your account, the following occurs:
+                <ul>
+                    <li>Your Firebase Authentication account is deleted.</li>
+                    <li>All transaction records associated with your user ID are permanently removed from our backend database.</li>
+                    <li>Your local data on the device remains until you manually clear it or uninstall the App.</li>
+                    <li>Cloud data on the backend server associated with your user ID is deleted.</li>
+                </ul>
+            </li>
+            <li><strong>Backup Data:</strong> Regular database backups of our backend server are retained for up to 30 days for disaster recovery purposes. After account deletion, your data will be removed from the next scheduled backup rotation.</li>
+            <li><strong>Receipt Images:</strong> We do not permanently store receipt images. They are processed temporarily for OCR and AI parsing, then discarded.</li>
+            <li><strong>AI Chat Logs:</strong> Chat message history may be retained temporarily for context continuity within a session. We do not maintain long-term archives of chat conversations.</li>
+        </ul>
+
+        <h2>6. Your Rights and Choices</h2>
+
+        <h3>6.1 Access and Portability</h3>
+        <p>You can export all your transaction data at any time from App Settings → Export All Data (premium feature) or by using the Backup & Restore feature to export a JSON backup of all your data.</p>
+
+        <h3>6.2 Correction and Deletion</h3>
+        <ul>
+            <li>You can edit or delete individual transactions directly in the App.</li>
+            <li>You can clear all local data from App Settings → Clear All Data.</li>
+            <li>You can delete your entire account and all associated data from App Settings → Delete Account. This triggers server-side deletion of all your records.</li>
+        </ul>
+
+        <h3>6.3 Opt-Out of Cloud Sync</h3>
+        <p>Cloud sync is an optional premium feature. You can disable it at any time from App Settings → Cloud Sync. Your local data remains intact and functional.</p>
+
+        <h3>6.4 GDPR Rights (EEA Users)</h3>
+        <p>If you are located in the European Economic Area, you have the following additional rights:</p>
+        <ul>
+            <li><strong>Right to Access:</strong> Request a copy of the personal data we hold about you.</li>
+            <li><strong>Right to Rectification:</strong> Request correction of inaccurate data.</li>
+            <li><strong>Right to Erasure ("Right to be Forgotten"):</strong> Request deletion of your data (this can be done via the Delete Account feature).</li>
+            <li><strong>Right to Restrict Processing:</strong> Request limitation on how we use your data.</li>
+            <li><strong>Right to Data Portability:</strong> Request your data in a structured, machine-readable format.</li>
+            <li><strong>Right to Object:</strong> Object to processing of your personal data.</li>
+        </ul>
+        <p>To exercise any of these rights, contact us at <a href="mailto:viduapps1@gmail.com">viduapps1@gmail.com</a>. We will respond within 30 days.</p>
+
+        <h2>7. Children's Privacy</h2>
+        <p>The App is not intended for children under the age of 13 (or 16 in the EEA). We do not knowingly collect personal information from children. If we become aware that a child has provided us with personal data, we will take steps to delete it. If you believe a child has provided us with personal information, please contact us immediately.</p>
+
+        <h2>8. Changes to This Privacy Policy</h2>
+        <p>We may update this Privacy Policy from time to time. We will notify you of material changes by:</p>
+        <ul>
+            <li>Updating the "Last Updated" date at the top of this policy.</li>
+            <li>Sending an in-app notification or email for significant changes.</li>
+            <li>Prompting you to review the updated policy on your next app launch for material changes.</li>
+        </ul>
+        <p>Your continued use of the App after any changes constitutes your acceptance of the updated policy. We encourage you to review this policy periodically.</p>
+
+        <h2>9. Data Controller and Contact Information</h2>
+        <p><strong>Data Controller:</strong> Suraj Bhosale</p>
+        <p><strong>Contact Email:</strong> <a href="mailto:viduapps1@gmail.com">viduapps1@gmail.com</a></p>
+        <p>If you have any questions, concerns, or complaints regarding this Privacy Policy or our data practices, please contact us at the email above. We will investigate and resolve your concern promptly.</p>
+
+        <div class="highlight-box">
+            <p><strong>For EEA Users:</strong> If you are unsatisfied with our response, you have the right to lodge a complaint with your local data protection authority (DPA).</p>
+        </div>
+
+        <hr style="border: none; border-top: 1px solid #1a1f2e; margin: 40px 0;">
+
+        <p style="text-align: center; color: #666; font-size: 0.85rem;">
+            Penny - AI Money Manager &copy; 2026. All rights reserved.
+        </p>
+    </div>
+</body>
+</html>
